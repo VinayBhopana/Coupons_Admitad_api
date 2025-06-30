@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="verify-admitad" content="49c7e50940" />
+    <meta name="commission-factory-verification" content="bde7ba8731f74fedabe88d71ba0bfb00" />
+    <meta name="partnerboostverifycode" content="32dc01246faccb7f5b3cad5016dd5033" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalCoupons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'gradient': 'gradient 15s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'bounce-in': 'bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'fade-in-up': 'fadeInUp 0.7s forwards'
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        bounceIn: {
+                            '0%': { transform: 'scale(0.3)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                        shimmer: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' },
+                        },
+                        fadeInUp: {
+                            'to': { opacity: '1', transform: 'none' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(209, 213, 219, 0.3);
+        }
+        
+        .shimmer-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shimmer-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 2s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="text-white text-3xl font-bold animate-bounce-in">
+                        🌍 GlobalCoupons
+                    </div>
+                    <nav class="hidden md:flex space-x-6 ml-8">
+                        <a href="#" class="text-white hover:text-yellow-300 transition-colors duration-300 font-medium">All Stores</a>
+                        <a href="#" class="text-white hover:text-yellow-300 transition-colors duration-300 font-medium">High Cashback</a>
+                        <a href="#" class="text-white hover:text-yellow-300 transition-colors duration-300 font-medium">Categories</a>
+                    </nav>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="flex-1 max-w-md mx-8">
+                    <div class="relative">
+                        <input type="text" id="searchInput" placeholder="Search for stores, deals..." 
+                               class="w-full px-4 py-3 rounded-full bg-white/20 backdrop-blur-md text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300">
+                        <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-white hover:text-yellow-300 transition-colors">
+                            🔍
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="text-white hover:text-yellow-300 transition-colors duration-300 text-2xl">🔔</button>
+                    <button class="text-white hover:text-yellow-300 transition-colors duration-300 text-2xl">👤</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-16 bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-slide-up">
+                    Save Big with <span class="text-yellow-400">Every Purchase</span>
+                </h1>
+                <p class="text-xl text-white/90 mb-8 animate-slide-up">
+                    Get the best cashback offers and exclusive deals from top brands
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 animate-slide-up">
+                    <div class="bg-white/20 backdrop-blur-md rounded-full px-6 py-3 text-white font-semibold">
+                        ✨ Up to 50% Cashback
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-md rounded-full px-6 py-3 text-white font-semibold">
+                        🎁 Exclusive Deals
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-md rounded-full px-6 py-3 text-white font-semibold">
+                        ⚡ Instant Activation
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 animate-float">
+            <div class="w-20 h-20 bg-yellow-400 rounded-full opacity-20"></div>
+        </div>
+        <div class="absolute bottom-20 right-10 animate-float" style="animation-delay: -3s;">
+            <div class="w-16 h-16 bg-pink-400 rounded-full opacity-20"></div>
+        </div>
+    </section>
+    
+    <!-- Catchy Slogans Section -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-10">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 animate-bounce-in">Unlock Savings, Unlock Happiness!</h2>
+                <p class="text-xl text-gray-600 mb-6 animate-fade-in">Discover exclusive deals, top brands, and unbeatable coupons—all in one place.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 max-w-xs flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Happy Shopper" class="w-24 h-24 mb-4">
+                    <h3 class="text-lg font-bold text-blue-700 mb-2">Shop Smart, Save Big!</h3>
+                    <p class="text-gray-500">Get the best deals and cashback offers every day.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 max-w-xs flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Gift Box" class="w-24 h-24 mb-4">
+                    <h3 class="text-lg font-bold text-purple-700 mb-2">Exclusive Coupons Await!</h3>
+                    <p class="text-gray-500">Unlock special discounts from your favorite brands.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 max-w-xs flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Cashback" class="w-24 h-24 mb-4">
+                    <h3 class="text-lg font-bold text-green-700 mb-2">Cashback on Every Purchase!</h3>
+                    <p class="text-gray-500">Earn while you shop—it's that simple.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 animate-slide-up">
+                <!-- Shop by Category -->
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Filter Coupons Section -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center">
+                <div class="w-full md:w-2/3 bg-gradient-to-r from-blue-400 to-purple-400 p-1 rounded-2xl shadow-lg mb-6">
+                    <div class="bg-white rounded-2xl flex items-center px-4 py-3">
+                        <svg class="w-6 h-6 text-blue-400 mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="campaignFilterInput" placeholder="Type campaign name..." class="w-full bg-transparent text-lg px-2 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300" />
+                    </div>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Filter Coupons</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section class="py-16 bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h2 class="text-4xl font-extrabold text-purple-700 animate-bounce-in mb-2">Featured Campaigns</h2>
+                <p class="text-lg text-gray-500 animate-fade-in">Explore the hottest deals and trending brands—click a campaign to see all its coupons!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="campaignsGrid">
+                <!-- Campaigns will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Deals Section -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 animate-slide-up">
+                    🔥 Top Cashback Stores
+                </h2>
+                <button class="text-blue-600 hover:text-blue-800 font-semibold text-lg hover:scale-105 transition-transform duration-300">
+                    
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="topDealsGrid">
+                <!-- Top deals will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">💰 DealSpot</h3>
+                    <p class="text-gray-400">Your trusted partner for the best cashback offers and deals.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">All Stores</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Categories</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">How it Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-blue-400 transition-colors">📘</a>
+                        <a href="#" class="text-2xl hover:text-blue-400 transition-colors">🐦</a>
+                        <a href="#" class="text-2xl hover:text-pink-400 transition-colors">📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 DealSpot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample data for categories and deals
+        const categories = [
+            // { name: 'Fashion', icon: '👗', deals: '500+ deals' },
+            // { name: 'Electronics', icon: '📱', deals: '300+ deals' },
+            // { name: 'Travel', icon: '✈️', deals: '200+ deals' },
+            // { name: 'Food', icon: '🍔', deals: '400+ deals' },
+            // { name: 'Beauty', icon: '💄', deals: '250+ deals' },
+            // { name: 'Home', icon: '🏠', deals: '350+ deals' }
+        ];
+
+        const topDeals = [
+            { name: 'Amazon', logo: 'https://logos-world.net/wp-content/uploads/2020/06/Amazon-Logo.png', cashback: 'Up to 15%', description: 'Everything you need', color: 'from-orange-400 to-orange-600' },
+            { name: 'Flipkart', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Logo-700x394.png', cashback: 'Up to 12%', description: 'Best online shopping', color: 'from-blue-400 to-blue-600' },
+            { name: 'Myntra', logo: 'https://logos-world.net/wp-content/uploads/2022/12/Myntra-Logo-500x281.png', cashback: 'Up to 10%', description: 'Fashion & lifestyle', color: 'from-pink-400 to-pink-600' },
+            { name: 'Zomato', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Zomato-Logo-700x394.png', cashback: 'Up to 8%', description: 'Food delivery', color: 'from-red-400 to-red-600' },
+            { name: 'BookMyShow', logo: 'https://in.bmscdn.com/webin/common/icons/logo.svg', cashback: 'Up to 5%', description: 'Movie tickets', color: 'from-purple-400 to-purple-600' },
+            { name: 'Uber', logo: 'https://logos-world.net/wp-content/uploads/2020/05/Uber-Logo.png', cashback: 'Up to 6%', description: 'Ride booking', color: 'from-gray-400 to-gray-600' },
+            { name: 'Swiggy', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Swiggy-Logo.png', cashback: 'Up to 7%', description: 'Food delivery', color: 'from-orange-400 to-orange-600' },
+            { name: 'Nike', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png', cashback: 'Up to 9%', description: 'Sports & fitness', color: 'from-black to-gray-700' },
+            { name: 'Paytm', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Paytm-Logo.png', cashback: 'Up to 20%', description: 'Digital payments & shopping', color: 'from-blue-500 to-cyan-500' },
+            { name: 'Nykaa', logo: 'https://images.seeklogo.com/logo-png/35/1/nykaa-logo-png_seeklogo-358073.png', cashback: 'Up to 8%', description: 'Beauty & wellness', color: 'from-pink-500 to-rose-500' },
+            { name: 'Ajio', logo: 'https://logos-world.net/wp-content/uploads/2022/12/Ajio-Logo-500x281.png', cashback: 'Up to 11%', description: 'Fashion & lifestyle', color: 'from-indigo-500 to-purple-500' },
+            { name: 'MakeMyTrip', logo: 'https://logos-world.net/wp-content/uploads/2021/02/MakeMyTrip-Logo.png', cashback: 'Up to 6%', description: 'Travel booking', color: 'from-red-500 to-orange-500' },
+            { name: 'Dominos', logo: 'https://logos-world.net/wp-content/uploads/2021/08/Dominos-Logo-700x394.png', cashback: 'Up to 5%', description: 'Pizza delivery', color: 'from-red-600 to-blue-600' },
+            { name: 'BigBasket', logo: 'https://logos-world.net/wp-content/uploads/2020/11/BigBasket-Logo.png', cashback: 'Up to 4%', description: 'Grocery delivery', color: 'from-green-500 to-emerald-500' },
+            { name: 'PhonePe', logo: 'https://logos-world.net/wp-content/uploads/2021/03/PhonePe-Logo.png', cashback: 'Up to 10%', description: 'Digital payments', color: 'from-purple-600 to-indigo-600' },
+            { name: 'CRED', logo: 'https://logos-world.net/wp-content/uploads/2022/01/Cred-Logo.png', cashback: 'Up to 12%', description: 'Credit card payments', color: 'from-gray-800 to-black' }
+        ];
+
+        // Populate categories
+        function populateCategories() {
+            const categoriesGrid = document.getElementById('categoriesGrid');
+            categories.forEach((category, index) => {
+                const categoryCard = document.createElement('div');
+                categoryCard.className = 'group cursor-pointer animate-bounce-in';
+                categoryCard.style.animationDelay = `${index * 0.1}s`;
+                categoryCard.innerHTML = `
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-all duration-300 transform group-hover:scale-105 group-hover:-translate-y-2">
+                        <div class="text-4xl mb-3 group-hover:animate-bounce">${category.icon}</div>
+                        <h3 class="font-semibold text-gray-800 mb-1">${category.name}</h3>
+                        <p class="text-sm text-gray-500">${category.deals}</p>
+                    </div>
+                `;
+                categoriesGrid.appendChild(categoryCard);
+            });
+        }
+
+        // Populate top deals
+        function populateTopDeals() {
+            const topDealsGrid = document.getElementById('topDealsGrid');
+            topDeals.forEach((deal, index) => {
+                const dealCard = document.createElement('div');
+                dealCard.className = 'group cursor-pointer animate-slide-up';
+                dealCard.style.animationDelay = `${index * 0.1}s`;
+                dealCard.innerHTML = `
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 group-hover:-translate-y-2 shimmer-effect">
+                    <div class="bg-gradient-to-br ${deal.color} h-32 flex items-center justify-center p-4">
+                        <img src="${deal.logo}" alt="${deal.name}" class="max-h-16 max-w-24 object-contain group-hover:scale-110 transition-transform duration-300 filter brightness-0 invert" 
+                             onerror="this.outerHTML='<div class=\\"text-4xl text-white group-hover:animate-bounce\\"></div>
+                    </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-xl font-bold text-gray-800">${deal.name}</h3>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold animate-pulse">
+                                    ${deal.cashback}
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">${deal.description}</p>
+                            <button onclick="openAffiliate('${deal.name}')" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                                Shop & Earn Cashback
+                            </button>
+                        </div>
+                    </div>
+                `;
+                topDealsGrid.appendChild(dealCard);
+            });
+        }
+
+        // Search functionality
+        function setupSearch() {
+            const searchInput = document.getElementById('searchInput');
+            let searchTimeout;
+
+            searchInput.addEventListener('input', function(e) {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    const query = e.target.value.toLowerCase();
+                    filterDeals(query);
+                }, 300);
+            });
+        }
+
+        // Filter deals based on search
+        function filterDeals(query) {
+            const dealCards = document.querySelectorAll('#topDealsGrid > div');
+            
+            dealCards.forEach(card => {
+                const dealName = card.querySelector('h3').textContent.toLowerCase();
+                const dealDesc = card.querySelector('p').textContent.toLowerCase();
+                
+                if (dealName.includes(query) || dealDesc.includes(query) || query === '') {
+                    card.style.display = 'block';
+                    card.classList.add('animate-fade-in');
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Affiliate link handler
+        function openAffiliate(storeName) {
+            // Replace with actual affiliate links
+            const affiliateLinks = {
+                'Amazon': 'https://amazon.com/?tag=youraffid',
+                'Flipkart': 'https://flipkart.com/?affid=youraffid',
+                'Myntra': 'https://myntra.com/?ref=youraffid',
+                // Add more affiliate links as needed
+            };
+            
+            const link = affiliateLinks[storeName] || '#';
+            
+            // Add click tracking/analytics here
+            console.log(`Affiliate click: ${storeName}`);
+            
+            // Open in new tab
+            window.open(link, '_blank');
+        }
+
+        // Fetch and render campaigns from the database
+        function fetchAndRenderCampaigns() {
+            const campaignsGrid = document.getElementById('campaignsGrid');
+            campaignsGrid.innerHTML = '<div class="col-span-full text-center text-gray-500">Loading campaigns...</div>';
+            
+            // Fetch campaigns data using PHP endpoint
+            fetch('get_campaigns.php')
+                .then(response => response.json())
+                .then(campaigns => {
+                    if (!Array.isArray(campaigns) || campaigns.length === 0) {
+                        campaignsGrid.innerHTML = '<div class="col-span-full text-center text-gray-500">No campaigns found.</div>';
+                        return;
+                    }
+                    campaignsGrid.innerHTML = '';
+                    campaigns.forEach(campaign => {
+                        const card = document.createElement('div');
+                        card.className = 'bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-purple-400 transition-all duration-300 flex flex-col cursor-pointer transform hover:scale-105 fade-in-up';
+                        card.onclick = () => {
+                            // Redirect to campaign.php with the campaign name
+                            window.location.href = `campaign.php?name=${encodeURIComponent(campaign.campaign_name)}`;
+                        };
+                        card.innerHTML = `
+                            <img src="${campaign.image_url || 'https://via.placeholder.com/300x150?text=Campaign'}" alt="Campaign Image" class="w-32 h-32 object-contain shadow-md mx-auto mb-4 bg-white border-2 border-gray-200 rounded-lg">
+                            <h3 class="text-xl font-bold text-purple-700 mb-2 text-center">${campaign.campaign_name || 'Unnamed Campaign'}</h3>
+                            <p class="text-gray-600 mb-4 text-center">${campaign.description || 'Explore amazing deals and offers from this campaign!'}</p>
+                            <div class="mt-auto text-center">
+                                <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white w-full py-3 rounded-lg hover:from-blue-600 hover:to-purple-700 transition duration-300 font-semibold">
+                                    View Campaign Coupons
+                                </button>
+                            </div>
+                        `;
+                        campaignsGrid.appendChild(card);
+                    });
+                })
+                .catch(err => {
+                    console.error('Error fetching campaigns:', err);
+                    campaignsGrid.innerHTML = '<div class="col-span-full text-center text-red-500">Failed to load campaigns.</div>';
+                });
+        }
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            populateCategories();
+            populateTopDeals();
+            setupSearch();
+            fetchAndRenderCampaigns();
+            
+            // Add scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-slide-up');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all sections
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+
+            const filterInput = document.getElementById('campaignFilterInput');
+            if (filterInput) {
+                filterInput.addEventListener('input', function(e) {
+                    const query = e.target.value.toLowerCase();
+                    const cards = document.querySelectorAll('#campaignsGrid > div');
+                    cards.forEach(card => {
+                        const name = card.querySelector('h3').textContent.toLowerCase();
+                        if (name.includes(query) || query === '') {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
+
+        // Add some interactive effects
+        document.addEventListener('mousemove', function(e) {
+            const cursor = document.querySelector('.cursor-effect');
+            if (!cursor) {
+                const cursorDiv = document.createElement('div');
+                cursorDiv.className = 'cursor-effect fixed w-6 h-6 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full pointer-events-none z-50 opacity-30 transition-all duration-100';
+                document.body.appendChild(cursorDiv);
+            }
+            
+            const cursorElement = document.querySelector('.cursor-effect');
+            cursorElement.style.left = e.clientX - 12 + 'px';
+            cursorElement.style.top = e.clientY - 12 + 'px';
+        });
+    </script>
+</body>
+</html>
