@@ -1,9 +1,9 @@
 <?php
 // === CONFIGURATION ===
-$client_id = 'ZYgOglJj3JVyMjRJPhw71LRkLAhK02';
-$client_secret = '2Jp0yMyeOJAn8aBsFlmQyfRSPrIfcc';
+$client_id = '';
+$client_secret = '';
 $scope = 'coupons_for_website';
-$website_id = 2819223;
+$website_id = ;
 
 $db_path = __DIR__ . '/coupons.db';
 
